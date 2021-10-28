@@ -1,0 +1,14 @@
+{
+    "vivifyScrumLogoLink": ".vsp-c-header a[href='https://cypress-api.vivifyscrum-stage.com']",
+    "standardPack": "div.vsp-l-content:nth-child(5) div.vsp-c-pricing section.vsp-c-section.vsp-c-landing-pricing.vsp-c-landing-pricing--clipped:nth-child(1) div.vsp-u-container ul.vsp-c-pricing-plan-list.vsp-c-pricing-plan-list--annual.is-active:nth-child(4) li.vsp-c-pricing-plan:nth-child(2) > a.vsp-c-btn.vsp-c-btn--secondary.vsp-c-btn--nowrap.vsp-c-pricing-btn--small:nth-child(6)",
+    "pricingLink": ".vsp-c-navigation > a[href='https://cypress-api.vivifyscrum-stage.com/pricing']:nth-of-type(1)",
+    "insightsLink": ".vsp-c-navigation > a[href='https://cypress-api.vivifyscrum-stage.com/insights']",
+    "featuresLink": ".vsp-c-navigation > a[href='https://cypress-api.vivifyscrum-stage.com/features']",
+    "howItWorksLink": ".vsp-c-navigation > a[href='https://cypress-api.vivifyscrum-stage.com/how-it-works']",
+    "aboutLink": ".vsp-c-navigation > a[href='https://cypress-api.vivifyscrum-stage.com/about']",
+    "contactLink": ".vsp-c-navigation > a[href='https://cypress-api.vivifyscrum-stage.com/contact-us']",
+    "downloadAppLink": ".vsp-c-navigation > a[href='https://cypress-api.vivifyscrum-stage.com/scrum-app-download']",
+    "loginLink": "a[href='https://cypress.vivifyscrum-stage.com/login']",
+    "startYourFreeTrialLink": ".vsp-c-navigation > .vsp-c-btn--primary",
+    "tryDemoLink": "a#tryDemoHeaderButton"
+}

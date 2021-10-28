@@ -1,0 +1,33 @@
+{
+    "user": {
+        "email": "test123danijela@gmail.com",
+        "password": "vrabala1009"
+    },
+    "invalidUser": {
+        "email": "inv@invalid.com",
+        "password": "invalid"
+    },
+    "registerUser": {
+        "email": "dani@dani.com",
+        "password": "nananana",
+        "numOfUsers": 1
+    },
+    "registerInvalidUser": {
+        "emailWithout@": "fakemail.com",
+        "emailWithout.": "fake@fakeemail",
+        "passwordLessThan5Chars": "1234",
+        "numOfUsersLessThan1": 0,
+        "numOfUsersMoreThan10": 11,
+        "numOfUsersNotInteger": "invalid"
+    },
+    "organization": {
+        "name": "Nova organizacija"
+    },
+    "board": {
+        "title": "Novi board",
+        "column": "QA kolona",
+        "task": "Nova prica",
+        "description": "Ovo je opis",
+        "comment": "Ovo je komentar"
+    }
+}

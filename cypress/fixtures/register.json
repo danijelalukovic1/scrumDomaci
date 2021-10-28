@@ -1,0 +1,17 @@
+{
+    "inputEmail": "input[type='email']",
+    "inputPassword": "input[type='password']",
+    "showPasswordButton": "button[type='button'",
+    "numberOfUsers": "input[name='number_of_users']",
+    "checkboxTerms": ".vs-c-checkbox-check",
+    "dataSubjectConsentFormLink": "a[css='1'",
+    "privacyNoticeLink": "a[xpath='1'",
+    "startYourFreeTrial": "button[type='submit']",
+    "signUpWithGoogle": ".vs-c-btn--gp",
+    "signUpWithFacebook": ".vs-c-btn--fb",
+    "signUpWithTwiter": ".vs-c-btn--tw",
+    "signUpWithRegzen": ".vs-c-btn--regzen",
+    "monthlyButton": ".vs-c-switch-pricing-plan-option:nth-of-type(1)",
+    "annuallyButton": ".vs-c-switch-pricing-plan-option:nth-of-type(2)",
+    "backToPricingLink": "a[href='https://cypress-api.vivifyscrum-stage.com/pricing']"
+}
