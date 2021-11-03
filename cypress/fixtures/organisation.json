@@ -16,7 +16,9 @@
         "closeButton": "button[name='close-new-board-modal-btn']",
         "nextButton": "button[name='next_btn']",
         "backButton": "button[name='prev_btn']",
-        "boardCreatedOKButton": ".vs-c-modal--features-button > .vs-c-btn"
+        "boardCreatedOKButton": ".vs-c-modal--features-button > .vs-c-btn",
+        "newOrg": "div.vs-c-list > .vs-c-list__item > .vs-c-list__btn > span",
+        "newOrg2": "/html/body/div[24]//ul[@class='vs-c-list']//span[.=' Add Organization ']"
     },
     "organizationInfo": {
         "uploadLogo": ".vs-c-settings-avatar-uploader",

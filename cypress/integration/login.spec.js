@@ -1,52 +1,46 @@
 /// <reference types = "Cypress" />
-import login from "../fixtures/login.json";
+
 import data from "../fixtures/data.json";
-import sidebar from "../fixtures/sidebar.json";
-import account from "../fixtures/account.json";
-import loggedInNavigation from "../fixtures/loggedInNavigation.json";
+import loginModule from "../models/loginModule";
 
 describe("First cypress block", () => {
-    it("Visit Vivify Scrum", () => {
+
+    beforeEach(() => {
         cy.visit("/", { timeout: 30000} );
     })
-    it("Login without credentials", () => {
-        cy.get(login.inputEmail).clear();
-        cy.get(login.inputPassword).clear();
-        cy.get(login.logInButton).click();
+  
+    it('login with wrong email', () => {
+        loginModule.login({email: data.invalidUser.email})
         cy.url().should("contain", "/login");
-    });
+    })
+    // it("Login without credentials", () => {
+    //     loginModule.login({})
+    //     cy.url().should("contain", "/login");
+    // });
+
     it("Login without email", () => {
-        cy.get(login.inputEmail).clear();
-        cy.get(login.inputPassword).clear().type(data.user.password);
-        cy.get(login.logInButton).click();
+        loginModule.login({email: ""});
         cy.url().should("contain", "/login");
     });
     it("Login without password", () => {
-        cy.get(login.inputEmail).clear().type(data.user.email);
-        cy.get(login.inputPassword).clear();
-        cy.get(login.logInButton).click();
+        loginModule.login({password: ""});
         cy.url().should("contain", "/login");
     });
     it("Login with invalid email", () => {
-        cy.get(login.inputEmail).clear().type(data.invalidUser.email);
-        cy.get(login.inputPassword).clear().type(data.user.password);
+        loginModule.login({email: data.registerInvalidUser["emailWithout."]});
         cy.url().should("contain", "/login");
     });
     it("Login with invalid password", () => {
-        cy.get(login.inputEmail).clear().type(data.user.email);
-        cy.get(login.inputPassword).clear().type(data.invalidUser.password);
+        loginModule.login({password: data.registerInvalidUser.passwordLessThan5Chars});
         cy.url().should("contain", "/login");
     });
     it("Login valid login", () => {
-        cy.get(login.inputEmail).clear().type(data.user.email);
-        cy.get(login.inputPassword).clear().type(data.user.password);
-        cy.get(login.logInButton).click();
+        loginModule.login({});
         cy.url().should("not.contain", "/login");
     });
-    it("Logout", () => {
-        cy.get(sidebar.accountSettings).click();
-        cy.get(account.accountSidebar.profile).click();
-        cy.get(loggedInNavigation.accountNavigation.logoutButton).click();
-        cy.url().should("contain", "/login");
-    });
+
+    after(() => {
+        loginModule.logout();
+    })
+
 })

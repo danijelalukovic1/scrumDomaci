@@ -1,15 +1,15 @@
 {
     "user": {
-        "email": "test123danijela@gmail.com",
-        "password": "vrabala1009"
+        "email": "daninani@gmail.com",
+        "password": "Test1234!"
     },
     "invalidUser": {
         "email": "inv@invalid.com",
         "password": "invalid"
     },
     "registerUser": {
-        "email": "dani@dani.com",
-        "password": "nananana",
+        "email": "danilu@dlkjni.com",
+        "password": "nanjlkjlkjanana",
         "numOfUsers": 1
     },
     "registerInvalidUser": {
