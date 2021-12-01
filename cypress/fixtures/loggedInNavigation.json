@@ -17,6 +17,7 @@
         "howItWorksButton": ".vs-l-project__options > .vs-c-btn"
     },
     "accountNavigation": {
-        "logoutButton": ".vs-c-logout"
+        "logoutButton": ".vs-c-logout",
+        "myProfile": ".el-dropdown-link"
     }
 }
